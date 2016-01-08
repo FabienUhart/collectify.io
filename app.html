@@ -1,9 +1,19 @@
 <html>
-    <heal>
+    <head>
         <script type="text/javascript" src="bower_components/angular/angular.js"></script>
-    </heal>
+    </head>
     <body ng-app>
-       <input type="text" ng-model="monTest">
-       {{monTest}}
+       <div ng-controller="myController">
+           {{ name }}
+       </div>
+       
+       <div>
+       </div>
+       
+       <script type="text/javascript">
+            function myController ($scope) {
+                $scope.name = "toto";
+            }
+        </script>
     </body>
 </html>
