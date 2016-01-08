@@ -2,8 +2,15 @@
     <head>
         <script type="text/javascript" src="bower_components/angular/angular.js"></script>
     </head>
-    <body  ng-app ng-init="myVar='toto'">
-       {{myVar}}
+    <body  ng-app>
+      <div ng-controller="myController">
+          {{name}}
+      </div>
         
+        <script type="text/javascript">
+            function myController ($scope) {
+                $scope.name = 'toto';
+            }
+        </script>
     </body>
 </html>
